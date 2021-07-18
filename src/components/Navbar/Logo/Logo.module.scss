@@ -1,0 +1,16 @@
+.logo {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  margin: 0.3em 0;
+
+  & > img {
+    width: 55px;
+    height: 55px;
+    margin-right: 1em;
+  }
+
+  p {
+    font-size: 0.7rem;
+  }
+}

@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './components/Navbar';
+import './App.scss';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+import Home from './pages/Home';
+import Vinyl from './pages/Vinyl';
+import Ornamental from './pages/Ornamental';
+import ChainLink from './pages/ChainLink';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/vinyl" exact component={Vinyl} />
+        <Route path="/ornamental" exact component={Ornamental} />
+        <Route path="/chainlink" exact component={ChainLink} />
+      </Switch>
+    </Router>
   );
 }
 
