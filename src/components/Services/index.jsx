@@ -10,18 +10,18 @@ import ServiceCard from './ServiceCard';
 const cardDetails = [
   {
     icon: SuccessIcon,
-    heading: "Lorem ipsum dolor sit amet",
-    caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam",
+    heading: "Quality Services",
+    caption: "We offer quality workmanship that will stand the test of time in maintaining functionality and appearance for years.",
   },
   {
     icon: ReviewIcon,
-    heading: "Lorem ipsum dolor sit amet",
-    caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam",
+    heading: "Loved by clients",
+    caption: "We are dedicated to provide excellent service for all of our customers.",
   },
   {
     icon: PaymentIcon,
-    heading: "Lorem ipsum dolor sit amet",
-    caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam",
+    heading: "Reasonable pricing",
+    caption: "We offer cost-effective options using high quality materials. ",
   },
 ]
 

@@ -5,8 +5,8 @@ const Hero = () => {
   return (
     <div className={styles.hero}>
       <div className={styles.header}>
-        <h1>Lorem ipsum dolor sit amet consectetur.</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum laborum illo quos ipsa alias quibusdam dolor eaque dolorum repellendus eum?</p>
+        <h1>For your fence installation needs</h1>
+        <p>If you are looking for a reliable, durable, long-lasting vinyl, ornamental, or chain-link fence, give us a call today!</p>
         <button>Contact Us</button>
       </div>
     </div>

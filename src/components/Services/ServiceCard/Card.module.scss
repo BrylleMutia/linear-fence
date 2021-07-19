@@ -3,8 +3,8 @@
 
 .card {
   width: 20em;
-  height: 80%;
-  color: #fff;
+  height: 20em;
+  color: $text-primary;
   text-align: center;
   background: $secondary;
   display: flex;
@@ -15,13 +15,13 @@
   border: 5px solid $primary;
   position: relative;
   top: 5em;
-  margin-top: 4em;
+  margin-top: 2em;
   margin-left: 1em;
   margin-right: 1em;
 
   & > img {
     width: 40%;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
   }
 
   & > h3, p {
