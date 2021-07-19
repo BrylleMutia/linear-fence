@@ -1,7 +1,9 @@
 @import "../../styles/breakpoints.scss";
+@import "../../styles/layouts.scss";
 
 .offers {
-  margin: 1em 10em;
+  @extend .container;
+  margin-bottom: 3em;
 
   .cards {
     display: flex;
@@ -10,14 +12,14 @@
   }
 }
 
-@media (max-width: $lg) {
-  .offers {
-    margin: 1em 5em;
-  }
-}
+// @media (max-width: $lg) {
+//   .offers {
+//     margin: 1em 3em;
+//   }
+// }
 
-@media (max-width: $sm) {
-  .offers {
-    margin: 1em 2em;
-  }
-}
+// @media (max-width: $sm) {
+//   .offers {
+//     margin: 1em;
+//   }
+// }

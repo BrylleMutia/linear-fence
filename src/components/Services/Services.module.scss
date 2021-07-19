@@ -1,16 +1,16 @@
 @import "../../styles/variables.scss";
 @import "../../styles/breakpoints.scss";
+@import "../../styles/layouts.scss";
 
-.services {
+.services_container {
   height: auto;
   background: $primary;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  padding: 0 7em;
-  margin-bottom: 14em;
 
-  @media (max-width: $sm) {
-    padding: 0 2em;
+  .services {
+    @extend .container;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 10em;
   }
 }

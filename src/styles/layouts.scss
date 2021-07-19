@@ -1,11 +1,11 @@
 @import "./breakpoints";
 
 .container {
-  max-width: 990px;
+  max-width: 1200px;
   margin: 0 auto;
-  // padding: 0 1em;
+  padding: 0 1em;
 
-  // @media (min-width: $sm) {
-  //     padding: 2em 1em;
-  // }
+  @media (min-width: $sm) {
+      padding: 2em 1em;
+  }
 }

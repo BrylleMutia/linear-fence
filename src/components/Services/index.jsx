@@ -27,10 +27,13 @@ const cardDetails = [
 
 const Services = () => {
   return (
-    <div className={styles.services}>
+    <div className={styles.services_container}>
+      <div className={styles.services}>
+
       {cardDetails.map((detail, index) => (
         <ServiceCard key={index} cardInfo={detail} />
-      ))}
+        ))}
+        </div>
     </div>
   )
 }

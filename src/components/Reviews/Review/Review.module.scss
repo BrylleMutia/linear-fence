@@ -1,0 +1,76 @@
+@import "../../../styles/layouts.scss";
+@import "../../../styles/breakpoints.scss";
+
+.review {
+  @extend .container;
+  height: 20em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  padding: 0 15em;
+
+  span {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+
+  & > p {
+    margin-bottom: 2em;
+  }
+}
+
+.quotation_one {
+  background: url("./images/quotations-1.png");
+  height: 2em;
+  background-size: 2em;
+  background-repeat: no-repeat;
+  margin-left: -5em;
+}
+
+.quote_container {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  height: 2em;
+
+  .quotation_two {
+    background: url("./images/quotations-2.png");
+    height: 2em;
+    background-size: 2em;
+    width: 2em;
+    margin-right: -5em;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: $lg) {
+  .review {
+    padding: 0 10em;
+  }
+}
+@media (max-width: $md) {
+  .review {
+    height: 22em;
+    padding: 0 8em;
+  }
+}
+@media (max-width: $sm) {
+  .review {
+    height: 25em;
+    padding: 0 3em;
+  }
+
+  .quotation_one {
+    margin-left: -2em;
+  }
+  .quote_container {
+    .quotation_two {
+      height: 2em;
+      background-size: 2em;
+      width: 2em;
+      margin-right: -2em;
+      background-repeat: no-repeat;
+    }
+  }
+}
