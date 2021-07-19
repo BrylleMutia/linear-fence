@@ -1,0 +1,23 @@
+@import "../../styles/breakpoints.scss";
+
+.offers {
+  margin: 1em 10em;
+
+  .cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: $lg) {
+  .offers {
+    margin: 1em 5em;
+  }
+}
+
+@media (max-width: $sm) {
+  .offers {
+    margin: 1em 2em;
+  }
+}

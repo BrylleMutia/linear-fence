@@ -4,8 +4,9 @@
 .navbar {
   background: $primary;
   color: #fff;
-  position: relative;
+  position: fixed;
   z-index: 99;
+  width: 100%;
 }
 
 .nav_container {
