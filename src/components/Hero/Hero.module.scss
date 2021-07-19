@@ -1,0 +1,71 @@
+@import "../../styles/variables.scss";
+@import "../../styles/breakpoints.scss";
+
+.hero {
+  background: linear-gradient(to right, rgba(80, 203, 147, 1), rgba(86, 212, 83, 0)), url("./images/hero.jpg");
+  height: 40em;
+  color: white;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 30%;
+  margin-left: 6em;
+
+  & > h1 {
+    margin-bottom: 0.5em;
+  }
+
+  & > p {
+    margin-bottom: 3em;
+  }
+
+  button {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+    width: 10em;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    padding: 0.5em 2em;
+    background-color: $secondary;
+    transition: transform 150ms ease-in;
+
+    &:hover,
+    &:focus {
+      background-color: $secondary-hover;
+      transform: scale(1.1);
+    }
+  }
+}
+
+@media (max-width: $lg) {
+  .header {
+    width: 40%;
+  }
+}
+
+@media (max-width: $sm) {
+  .header {
+    width: 100%;
+    margin-left: 0;
+    align-items: center;
+    text-align: center;
+    padding: 0 2em;
+
+    & > h1 {
+      font-size: 1.5rem;
+    }
+
+    & > p {
+      font-size: 0.9rem;
+    }
+  }
+}
