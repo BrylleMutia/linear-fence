@@ -1,0 +1,63 @@
+@import "../../styles/variables.scss";
+@import "../../styles/layouts.scss";
+@import "../../styles/breakpoints.scss";
+
+.contact_container {
+  @extend .container;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact_details {
+  margin-left: 8em;
+
+  & > h2 {
+    margin-bottom: 2em;
+    font-weight: 500;
+  }
+
+  .phone,
+  .facebook {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+
+    & > h4 {
+      font-weight: 500;
+      margin-left: 1em;
+    }
+
+    a {
+      text-decoration: none;
+      color: #000;
+
+      &:visited {
+        color: initial;
+      }
+
+      &:hover, &:focus {
+        color: $text-primary;
+      }
+    }
+  }
+}
+
+@media (max-width: $md) {
+  .contact_details {
+    margin-left: 3em;
+  }
+}
+@media (max-width: $sm) {
+  .contact {
+    flex-direction: column;
+  }
+
+  .contact_details {
+    margin-left: 0;
+    margin-top: 2em;
+  }
+}
