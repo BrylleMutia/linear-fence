@@ -7,11 +7,13 @@ import Vinyl from './pages/Vinyl';
 import Ornamental from './pages/Ornamental';
 import ChainLink from './pages/Chainlink';
 import Footer from "./components/Footer";
+import ScrollToTop from './components/ScrollToTop';
 
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Navbar />
       <Switch>
         <Route path="/" exact component={Home} />
