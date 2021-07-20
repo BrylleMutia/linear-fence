@@ -5,7 +5,9 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from './pages/Home';
 import Vinyl from './pages/Vinyl';
 import Ornamental from './pages/Ornamental';
-import ChainLink from './pages/ChainLink';
+import ChainLink from './pages/Chainlink';
+import Footer from "./components/Footer";
+
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
         <Route path="/ornamental" exact component={Ornamental} />
         <Route path="/chainlink" exact component={ChainLink} />
       </Switch>
+      <Footer />
     </Router>
   );
 }

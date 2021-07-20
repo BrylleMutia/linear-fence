@@ -28,7 +28,7 @@ const offerDetails = [
 
 const Offers = () => {
   return (
-    <div className={styles.offers}>
+    <div className={styles.offers} id="offers">
       <SectionTitle title="WHAT WE OFFER" />
 
       <div className={styles.cards}>

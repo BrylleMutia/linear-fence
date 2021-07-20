@@ -1,0 +1,6 @@
+@import "../../styles/layouts.scss";
+
+.chainlink {
+  @extend .container;
+  padding-top: 8em;
+}

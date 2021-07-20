@@ -22,7 +22,6 @@
   @media (max-width: $sm) {
     padding: 0 1em;
   }
-  
 
   ul {
     list-style-type: none;
@@ -30,7 +29,7 @@
     align-items: center;
     transition: all 200ms ease-in;
 
-    &.active {
+    &.open {
       right: 0px;
       z-index: 5;
     }
@@ -45,20 +44,25 @@
       height: 100%;
     }
 
-    & > li {
+    & > a {
       padding: 0.5em 1em;
       display: flex;
       align-items: center;
       cursor: pointer;
+      text-decoration: none;
 
       &:hover,
       &:focus {
         background: $secondary;
       }
 
-      a {
+      li {
         color: #fff;
-        text-decoration: none;
+
+        // if link is currently active or selected
+        &.active {
+          font-weight: 600;
+        }
       }
 
       @media (max-width: $md) {

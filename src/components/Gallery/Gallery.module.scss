@@ -1,0 +1,22 @@
+@import "../../styles/breakpoints.scss";
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  margin-bottom: 4em;
+
+  img {
+    width: 100%;
+
+    &:nth-child(odd) {
+      justify-self: flex-end;
+    }
+  }
+
+  @media (max-width: $sm) {
+    grid-template-columns: 1fr;
+  }
+}

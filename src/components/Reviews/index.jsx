@@ -32,12 +32,12 @@ const clientReviews = [
 
 const Reviews = () => {
   return (
-    <div className={styles.reviews_container}>
+    <div className={styles.reviews_container} id="reviews">
       <div className={styles.container}>
         <SectionTitle title="CLIENT REVIEWS" />
       </div>
       <div className={styles.reviews}>
-        <Carousel autoPlay infiniteLoop interval={5000}>
+        <Carousel autoPlay infiniteLoop interval={5000} showThumbs={false}>
           {clientReviews.map((reviewDetail, index) => (
             <Review key={index} reviewInfo={reviewDetail} />
           ))}

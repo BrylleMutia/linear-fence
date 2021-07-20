@@ -7,7 +7,7 @@ import { FaFacebook } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <div className={styles.contact_container}>
+    <div className={styles.contact_container} id="contact">
       <SectionTitle title="CONTACT US" />
 
       <div className={styles.contact}>
@@ -16,7 +16,8 @@ const Contact = () => {
           height="350"
           style={{ border: 0 }}
           loading="lazy"
-          allowfullscreen
+          allowFullScreen
+          title="linear-fence-map"
           src={`https://www.google.com/maps/embed/v1/place?q=807%20Secord%20Boulevard%20Northwest%2C%20Edmonton%2C%20AB%20T5T%207J8%2C%20Canada&key=${process.env.REACT_APP_GOOGLE_MAPS_KEY}`}></iframe>
 
         <div className={styles.contact_details}>

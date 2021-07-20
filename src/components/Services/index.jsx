@@ -27,7 +27,7 @@ const cardDetails = [
 
 const Services = () => {
   return (
-    <div className={styles.services_container}>
+    <div className={styles.services_container} id="services">
       <div className={styles.services}>
 
       {cardDetails.map((detail, index) => (

@@ -1,0 +1,6 @@
+@import "../../styles/layouts.scss";
+
+.vinyl {
+  @extend .container;
+  padding-top: 8em;
+}
