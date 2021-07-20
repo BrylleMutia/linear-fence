@@ -1,25 +1,20 @@
 @import "../../../styles/breakpoints.scss";
 
+
+.card_container {
+  margin: 1em;
+}
+
 .offer_card {
   height: 15em;
   color: white;
-  // background-attachment: fixed;
-  // background-position: center;
   width: 20em;
   display: flex;
   align-items: flex-end;
   justify-content: center;
   padding-bottom: 1em;
   transition: all 500ms ease-in;
-  margin: 1em;
-
-  // &:hover,
-  // &:focus {
-  //   h6 {
-  //     bottom: 100px;
-  //   }
-  // }
-
+    
   & > h6 {
     // position: relative;
     font-weight: 400;
@@ -32,6 +27,10 @@ a {
 }
 
 @media (max-width: $md) {
+  .card_container {
+    margin: 0 1em;
+  }
+
   .offer_card {
     margin: 1em 0;
   }
