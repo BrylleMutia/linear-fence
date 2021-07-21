@@ -2,7 +2,7 @@
 @import "../../styles/breakpoints.scss";
 
 .hero {
-  background: linear-gradient(to right, rgba(80, 203, 147, 1), rgba(86, 212, 83, 0)), url("./images/hero.jpg");
+  background: linear-gradient(to right, $primary, rgba(86, 212, 83, 0)), url("./images/hero.jpg");
   height: 100vh;
   color: white;
   background-attachment: fixed;
@@ -26,7 +26,7 @@
     margin-bottom: 3em;
   }
 
-  a {
+  .contact_button {
     font-family: "Roboto", sans-serif;
     font-weight: bold;
     font-size: 18px;

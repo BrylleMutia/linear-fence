@@ -8,7 +8,7 @@ const OfferCard = ({ offerInfo }) => {
   const { image, title, path } = offerInfo;
 
   const cardStyle = {
-    background: `linear-gradient(to top, rgba(80, 203, 147, 1), rgba(86, 212, 83, 0)), url(${image})`,
+    background: `linear-gradient(to top, hsl(69, 82%, 47%), rgba(86, 212, 83, 0)), url(${image})`,
     backgroundSize: "cover",
   };
 
