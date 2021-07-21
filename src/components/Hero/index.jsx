@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div className={styles.hero} id="home">
       <div className={styles.header}>
-        <h1>For your fence installation needs</h1>
+        <h1>FOR YOUR FENCE INSTALLATION NEEDS</h1>
         <p>If you are looking for a reliable, durable, long-lasting vinyl, ornamental, or chain-link fence, give us a call today!</p>
         <button>Contact Us</button>
       </div>
