@@ -26,7 +26,7 @@
     margin-bottom: 3em;
   }
 
-  button {
+  a {
     font-family: "Roboto", sans-serif;
     font-weight: bold;
     font-size: 18px;
@@ -38,6 +38,8 @@
     padding: 0.5em 2em;
     background-color: $secondary;
     transition: transform 150ms ease-in;
+    text-decoration: none;
+    text-align: center;
 
     &:hover,
     &:focus {
