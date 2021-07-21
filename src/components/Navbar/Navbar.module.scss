@@ -38,10 +38,11 @@
       position: fixed;
       background: $primary;
       right: -200px;
-      top: 60px;
+      top: 65px;
       z-index: 2;
       flex-direction: column;
       height: 100%;
+      opacity: 0.85;
     }
 
     & > a {
