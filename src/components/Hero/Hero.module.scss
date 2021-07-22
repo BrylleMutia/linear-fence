@@ -2,7 +2,9 @@
 @import "../../styles/breakpoints.scss";
 
 .hero {
-  background: linear-gradient(to right, $primary, rgba(86, 212, 83, 0)), url("./images/hero.jpg");
+  background: url("./images/hero.jpg"), radial-gradient(rgb(175, 175, 175), rgb(138, 138, 138));
+  background-blend-mode: multiply;
+  // background: linear-gradient(to right, $primary, rgba(86, 212, 83, 0)), url("./images/hero.jpg");
   height: 100vh;
   color: white;
   background-attachment: fixed;
@@ -30,7 +32,7 @@
     font-family: "Roboto", sans-serif;
     font-weight: bold;
     font-size: 18px;
-    color: #fff;
+    color: $text-primary;
     width: 10em;
     border-radius: 8px;
     outline: none;
