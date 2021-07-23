@@ -1,41 +1,40 @@
-import React from 'react';
+import React, { useState, useEffect } from "react";
 import styles from "./Services.module.scss";
+import axios from "axios";
 
-import PaymentIcon from "./images/Payment.png";
-import ReviewIcon from "./images/Reviews.png";
-import SuccessIcon from "./images/Success.png";
-import ServiceCard from './ServiceCard';
+import Img1 from "./images/Success.png";
+import Img2 from "./images/Reviews.png";
+import Img3 from "./images/Payment.png";
+import ServiceCard from "./ServiceCard";
 
-
-const cardDetails = [
-  {
-    icon: SuccessIcon,
-    heading: "Quality Services",
-    caption: "We offer quality workmanship that will stand the test of time in maintaining functionality and appearance for years.",
-  },
-  {
-    icon: ReviewIcon,
-    heading: "Loved by clients",
-    caption: "We are dedicated to provide excellent service for all of our customers.",
-  },
-  {
-    icon: PaymentIcon,
-    heading: "Reasonable pricing",
-    caption: "We offer cost-effective options using high quality materials. ",
-  },
-]
+const serviceImgs = [Img1, Img2, Img3];
 
 const Services = () => {
+  const [services, setServices] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("/services")
+      .then((response) => {
+        // map first to attach icons for each service from API
+        setServices(
+          response.data.map((service) => {
+            return { ...service, icon: serviceImgs.filter((img, index) => service.id === index + 1) };
+          })
+        );
+      })
+      .catch((err) => alert(`Can't fetch website data. Error: ${err.response.data}`));
+  }, []);
+
   return (
     <div className={styles.services_container} id="services">
       <div className={styles.services}>
-
-      {cardDetails.map((detail, index) => (
-        <ServiceCard key={index} cardInfo={detail} />
+        {services.map((detail, index) => (
+          <ServiceCard key={index} cardInfo={detail} />
         ))}
-        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Services
+export default Services;

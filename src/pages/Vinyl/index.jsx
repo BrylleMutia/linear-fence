@@ -15,8 +15,12 @@ import Image7 from "./images/7.jpg";
 import Image8 from "./images/8.jpg";
 import Image9 from "./images/9.jpg";
 import Image10 from "./images/10.jpg";
+import Image11 from "./images/11.jpg";
+import Image12 from "./images/12.jpg";
+import Image13 from "./images/13.jpg";
+import Image14 from "./images/14.jpg";
 
-const images = [Image1, Image2, Image3, Image4, Image5, Image6, Image7, Image8, Image9, Image10];
+const images = [Image1, Image2, Image3, Image4, Image5, Image6, Image7, Image8, Image9, Image10, Image11, Image12, Image13, Image14];
 
 const Vinyl = () => {
   return (

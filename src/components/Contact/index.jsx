@@ -1,11 +1,23 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./Contact.module.scss";
+import axios from "axios";
 
 import SectionTitle from "../SectionTitle";
 import { AiFillPhone } from "react-icons/ai";
 import { FaFacebook } from "react-icons/fa";
 
 const Contact = () => {
+  const [contactDetails, setContactDetails] = useState({});
+
+  useEffect(() => {
+    axios
+      .get("/contact")
+      .then((response) => {
+        setContactDetails(response.data);
+      })
+      .catch((err) => alert(`Can't fetch website data. Error: ${err.response.data}`));
+  }, []);
+
   return (
     <div className={styles.contact_container} id="contact">
       <SectionTitle title="CONTACT US" />
@@ -31,7 +43,7 @@ const Contact = () => {
           <div className={styles.phone}>
             <AiFillPhone style={{ color: "#71EFA3", fontSize: "1.5rem" }} />
             <h4>
-              <a href="tel:780-719-2484">780-719-2484</a>
+              <a href={`tel:${contactDetails.contact_number}`}>{contactDetails.contact_number}</a>
             </h4>
           </div>
           <div className={styles.facebook}>
