@@ -19,9 +19,11 @@ const Offers = () => {
       .get("/offers")
       .then((response) => {
         setOffers(
-          response.data.map((offer) => {
-            return { ...offer, display_img: offersImg.filter((img, index) => offer.id === index + 1) };
-          })
+          response.data
+            .map((offer) => {
+              return { ...offer, display_img: offersImg.filter((img, index) => offer.id === index + 1) };
+            })
+            .reverse()
         );
       })
       .catch((err) => alert(`Can't fetch website data. Error: ${err.response.data}`));
