@@ -4,8 +4,8 @@ import styles from "./Hero.module.scss";
 import axios from "axios";
 
 const Hero = () => {
-  const [header, setHeader] = useState("FOR YOUR FENCE INSTALLATION NEEDS");
-  const [subHeader, setSubHeader] = useState("If you are looking for a reliable, durable, long-lasting vinyl, ornamental, or chain-link fence, give us a call today!");
+  const [header, setHeader] = useState("");
+  const [subHeader, setSubHeader] = useState("");
   const [buttonText, setButtonText] = useState("Contact Us");
 
   useEffect(() => {
