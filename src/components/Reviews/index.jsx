@@ -6,6 +6,7 @@ import { Carousel } from "react-responsive-carousel";
 import SectionTitle from "../SectionTitle";
 import Review from "./Review";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const Reviews = () => {
   const [reviews, setReviews] = useState([]);
@@ -30,6 +31,9 @@ const Reviews = () => {
             <Review key={index} reviewInfo={reviewDetail} />
           ))}
         </Carousel>
+      </div>
+      <div className={styles.btn_container}>
+        <Link to="/feedback" className={styles.button_outlined_secondary}>Leave a review</Link>
       </div>
     </div>
   );

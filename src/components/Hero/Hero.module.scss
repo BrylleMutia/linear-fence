@@ -1,5 +1,6 @@
 @import "../../styles/variables.scss";
 @import "../../styles/breakpoints.scss";
+@import "../../styles/components.scss";
 
 .hero {
   background: url("./images/hero.jpg"), radial-gradient(rgb(175, 175, 175), rgb(138, 138, 138));
@@ -27,28 +28,10 @@
   & > p {
     margin-bottom: 3em;
   }
+}
 
-  .contact_button {
-    font-family: "Roboto", sans-serif;
-    font-weight: bold;
-    font-size: 18px;
-    color: $text-primary;
-    width: 10em;
-    border-radius: 8px;
-    outline: none;
-    border: none;
-    padding: 0.5em 2em;
-    background-color: $secondary;
-    transition: transform 150ms ease-in;
-    text-decoration: none;
-    text-align: center;
-
-    &:hover,
-    &:focus {
-      background-color: $secondary-hover;
-      transform: scale(1.1);
-    }
-  }
+.btn_container {
+  align-self: flex-start;
 }
 
 @media (max-width: $lg) {
@@ -72,5 +55,9 @@
     & > p {
       font-size: 0.9rem;
     }
+  }
+
+  .btn_container {
+    align-self: center;
   }
 }

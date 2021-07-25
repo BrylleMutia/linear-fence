@@ -1,0 +1,35 @@
+.button_outlined {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: $secondary;
+  border-radius: 5px;
+  outline: none;
+  padding: 0.5em 2.5em;
+  background-color: transparent;
+  transition: transform 150ms ease-in;
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid $secondary;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+
+  &:hover,
+  &:focus {
+    background-color: $secondary;
+    color: $text-primary;
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
+  }
+}
+
+.button_outlined_secondary {
+  @extend .button_outlined;
+  font-size: 1rem;
+  color: $text-primary;
+  border: 2px solid $text-primary;
+
+  &:hover,
+  &:focus {
+    background-color: $text-primary;
+    color: #fff;
+  }
+}

@@ -24,9 +24,11 @@ const Hero = () => {
       <div className={styles.header}>
         <h1>{header}</h1>
         <p>{subHeader}</p>
-        <a className={styles.contact_button} href="#contact">
-          {buttonText}
-        </a>
+        <div className={styles.btn_container}>
+          <a className={styles.button_outlined} href="#contact">
+            {buttonText}
+          </a>
+        </div>
       </div>
     </div>
   );

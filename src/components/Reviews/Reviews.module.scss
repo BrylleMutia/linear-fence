@@ -1,11 +1,17 @@
 @import "../../styles/layouts.scss";
 @import "../../styles/variables.scss";
+@import "../../styles/components.scss";
 
 .reviews {
   background: $secondary;
+  margin-bottom: 1.5em;
 }
 
 .reviews_container {
   margin-bottom: 5em;
   scroll-margin-top: 5rem;
+}
+
+.btn_container {
+  text-align: center;
 }
